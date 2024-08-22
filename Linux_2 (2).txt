@@ -1,0 +1,253 @@
+Linux:
+
+Linux is an operating system. ---> 60% of your cloud is done
+
+1. Security level is higher than the windows
+2. User interface
+3. Most preferrable OS for the cloud based application
+
+Interface:
+
+1. GUI ---> graphical user interface
+
+2. CLI ---> command line interface
+
+If you download the GUI, it will be available of both GUI and CLI
+
+***Note: When it comes to the cloud there is no graphical user interface, you will be working on the only command line interface
+
+by default any Linux operating system will have 2 users:
+
+1. root user = super user = sudo user ---> username ="root"
+
+2. Distribution user
+
+Linux distributions:
+
+1. Ubuntu ----> username: "ubuntu"
+
+2. Redhat ---> username: "ec2_user"
+
+3. Amazon Linux ---> username: "ec2_user"
+
+4. SUSE ---> username: "suse_linux"
+
+5. Parrot OS
+
+
+ubuntu@ip-172-31-38-21:~$
+
+username@ADDRESS_OF_THE_MACHINE
+
+Linux global Commands:
+
+1. pwd = present working directory
+
+
+directory (Linux) = folder (windows)
+
+2. ls = list of files or directory listing 
+
+3. ls -la = listing out the files including hidden files
+
+4. cd DIRECTORY_NAME  ---> change directory
+
+5. cd .. ---> it will take you one step backwards
+
+6. mkdir DIRECTORY_NAME --> mkdir = make directory. it will create a new directory
+
+7. clear ---> clear your workspace
+
+8. How to create the file ?
+
+option-1: where you can create file first ( which is empty ) and then you can edit later.
+
+	command: touch FILE_NAME
+
+	How to create the multiple files together ?
+
+	command: touch FILE_NAME-{1..25}
+
+option-2: where you can create the file and write/insert the data at a time
+
+	command: echo "DATA" > FILE_NAME
+	example: echo "This is the second option for the creating of the file" > siva-devops
+
+
+    How to verify the data is successfully created inside the file ?
+
+    What is the command to print the file ?
+
+	command: cat FILE_NAME
+
+option-3: Editors ---> where you will entering the data first then save it later
+
+	Popular editors in Linux OS: "VIM" and "NANO"
+
+	nano editor: 
+
+		command: nano FILE_NAME
+
+	vi editor: 
+
+		command: vi FILE_NAME
+
+to make the file from silent-mode to the insert mode you have to press the keyword "i"
+
+	silent mode ---> insert mode ( you have to enter letter "i" )
+
+	insert mode ---> silent mode ( you have to enter keyword "esc" )
+
+	how to save the data ?
+
+	After coming from the insert mode enter the command " :wq )
+
+		w = write
+		q = quit
+		
+		:wq ---> save and exit
+
+	If i dont want to save the data then ":q!"
+		
+		q = quit
+		! = forcefully
+
+		:q! ---> forcefully quit with out saving
+
+9. How to delete the files ?
+
+	command: rm FILE_NAME
+
+   How to delete multiple files?
+
+	command: rm FILE_NAME_1 FILE_NAME_2
+
+   How to delete the multiple files which are having a common name ?
+
+	command: rm COMMON_NAME-*
+
+10. rmdir DIRECTORY_NAME ---> delete only the empty directories
+
+11. How to delete a directory which is having files in it ?
+
+	rm -rf DIRECTORY_NAME ---> rm = remove, r = recursive and directory, f = forcefully
+
+	deleting the directory with forcefully when the files are still in there.
+
+12. How to move the files from directory to another ?
+
+	mv SOURCE_FILE DESTINATION_PLACE
+
+	how to move multiple files from directory to another ?
+
+	mv SOURCE_FILE_1 SOURCE_FILE_2 SOURCE_FILE_3 DESTINATION_PLACE
+
+	How to rename the file ?
+
+	mv PRESENT_FILE_NAME NEW_FILE_NAME
+
+13. how to copy files from directory to another ?
+
+	cp SOURCE_FILE DESTINATION_PLACE
+
+	how to copy multiple files from directory to another ?
+
+	cp SOURCE_FILE_1 SOURCE_FILE_2 SOURCE_FILE_3 DESTINATION_PLACE
+
+
+Advanced data:
+
+14. How to create a users ?
+
+	command: useradd USERNAME
+	
+	example: useradd syed
+
+	option-1: ubuntu should the convince the user who has the access to run the command thats user is the root user
+
+	command: sudo useradd USERNAME ---> running by ubuntu
+
+
+*** Where you can see the list of users and their data in the Linux OS ?
+
+Ans: /etc/passwd
+
+syed:x:1001:1001::/home/syed:/bin/sh
+
+username:password:user_id(UID):group_id(GID)::PATH_OF_THE_USER:EXECUTION_MODEL
+	
+
+	option-2: switching to the root user where the root user only running the commands.
+
+How to switch to the root user ?
+
+command: sudo -s
+
+how to come back from root user to general/distribution user ?
+
+command: exit
+
+15. How to delete the user ?
+
+	command: userdel USERNAME
+
+16. How to create a group ?
+
+	command: groupadd devops
+
+ *** Where you can see the list of groups and their memebers in the Linux OS ?
+
+Ans: /etc/group
+
+17. How to add the users to the group ?
+
+	command: usermod -aG GROUP_NAME USER_NAME
+
+	example: usermod -aG devops syed
+
+    How to remove the users from the group ?
+
+	command: gpasswd -d USER_NAME GROUP_NAME
+
+
+18. How to delete the group ?
+
+	command: groupdel group
+
+
+More advanced:
+
+19. File permissions:
+	
+d rwxr-xr-x ---> directory
+
+- rw-rw-r-- ----> file
+
+r = read
+w = write
+x = execute
+
+rwx r-x r-x
+
+1st part: the permissions of the user who created it
+
+2nd part: it is the permissions for the group
+
+3rd part: It is the permissions for the others
+
+
+
+20. Changed ownership 
+
+	
+
+
+
+
+
+
+
+
+
+
+
