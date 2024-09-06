@@ -1,0 +1,94 @@
+  1  docker ps
+    2  sudo apt  install docker.io
+    3  docker ps
+    4  docker ps
+    5  apt  install docker.io
+    6  exit
+    7  docker ps
+    8  docker ps
+    9  aws --version
+   10  apt  install awscli
+   11  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   12  unzip awscliv2.zip
+   13  sudo ./aws/install
+   14  sudo password
+   15  docker ps
+   16  exit
+   17  docker ps
+   18  sudo usermod -aG jenkins ubuntu
+   19  exit
+   20  docker ps
+   21  docker ps
+   22  aws --version
+   23  docker ps
+   24  docker --ps
+   25  docker ps
+   26  docker ps
+   27  exit
+   28  aws --version
+   29  docker --version
+   30  sudo vi install-packages.sh
+   31  sudo vi install-packages.sh
+   32  sudo -s
+   33  sudo visudo
+   34  sudo apt update -y
+   35  passwd
+   36  passwd --help
+   37  docker ps
+   38  aws --version
+   39  docker --version
+   40  docker images
+   41  sudo vi /etc/group
+   42  passwd
+   43  sudo passwd
+   44  new passwd
+   45  docker ps
+   46  sudo chmod 777 /var/run/docker.sock
+   47  sudo apt update-y
+   48  docker ps
+   49  docker images
+   50  docker chmod 777 /var/run/docker.sock
+   51  sudo chmod 777 /var/run/docker.sock
+   52  exit
+   53  docker ps
+   54  sudo chmod 777 /var/run/docker.sock
+   55  passwd
+   56  /etc/passwd
+   57  sudo chmod 0640 /etc/shadow
+   58  sudo fsck -f /
+   59  sudo chmod 666 /var/run/docker.sock
+   60  exit
+   61  docker ps
+   62  sudo vi naz
+   63  docker ps
+   64  sudo chmod 777 /var/run/docker.sock
+   65  sudo passwd
+   66  sudo passwd jenkins
+   67  exit
+   68  docker ps
+   69  sudo chmod 777 /var/run/docker.sock
+   70  docker ps
+   71  history
+jenkins@ip-172-31-83-24:~$  1  docker ps
+    2  sudo apt  install docker.io
+    3  docker ps
+    4  docker ps
+    5  apt  install docker.io
+    6  exit
+    7  docker ps
+    8  docker ps
+    9  aws --version
+   10  apt  install awscli
+   11  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   12  unzip awscliv2.zip
+   13  sudo ./aws/install
+   14  sudo password
+   15  docker ps
+   16  exit
+   17  docker ps
+   18  sudo usermod -aG jenkins ubuntu
+   19  exit
+   20  docker ps
+   21  docker ps
+   22  aws --version
+   23  docker ps
