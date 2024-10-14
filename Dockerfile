@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 FROM mcr.microsoft.com/dotnet/sdk:latest As build-env
 
-RUN apk --no-cache upgrade musl
+RUN dotnet --no-cache upgrade musl
 
 # Set the working directory
 WORKDIR /app
@@ -17,7 +17,7 @@ RUN dotnet publish -c Release -o out
 # Build runtime image
 FROM mcr.microsoft.com/dotnet/sdk:latest
 
-RUN apk --no-cache upgrade musl
+RUN dotnet --no-cache upgrade musl
 
 EXPOSE 3000
 
