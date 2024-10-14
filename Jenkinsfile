@@ -17,7 +17,7 @@ pipeline {
         stage ('deploy') {
 
              steps {
-                 sh ...
+                 sh '''
                  ssh -i /var/lib/jenkins/naz.pem -o StrictHostKeyChecking=no ubuntu@ec2-54-86-21-160.compute-1.amazonaws.com 'bash -s' < ./deploy.sh \${BUILD_NUMBER}
                  '''
 
