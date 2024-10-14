@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM mcr.microsoft.com/jen/sdk:3.1-alpine AS build-env
+FROM mcr.microsoft.com/jen/sdk:alpine AS build-env
 
 RUN apk --no-cache upgrade musl
 
@@ -14,7 +14,7 @@ COPY .  ./
 RUN jen publish -c Release -o out
 
 # Build runtime image
-FROM mcr.microsoft.com/jen/aspnet:3.1-alpine
+FROM mcr.microsoft.com/jen/aspnet:alpine
 
 RUN apk --no-cache upgrade musl
 
