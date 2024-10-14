@@ -7,7 +7,7 @@ aws ecr get-login-password --region us-east-1 | docker login --username AWS --pa
 docker pull 010438494499.dkr.ecr.us-east-1.amazonaws.com/sample_docker:$1
 
 #delete the existing container
-docker rm -f dotnet-app
+docker rm -f Jen-public
 
 # dokcer run the image
-docker run -itd -p 8000:8000 --name dotnet-app 10438494499.dkr.ecr.us-east-1.amazonaws.com/sample_docker:$1
+docker run -itd -p 8000:8000 --name Jen-public 10438494499.dkr.ecr.us-east-1.amazonaws.com/sample_docker:$1
